@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1904D91D1BA82000D555BD /* harinezumi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF1904D81D1BA82000D555BD /* harinezumi.jpeg */; };
+		CF40F9FB1D2E26AF0069AE54 /* email-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = CF40F9F91D2E26AF0069AE54 /* email-ico.png */; };
+		CF40F9FC1D2E26AF0069AE54 /* xcode.png in Resources */ = {isa = PBXBuildFile; fileRef = CF40F9FA1D2E26AF0069AE54 /* xcode.png */; };
+		CF40F9FE1D2E35940069AE54 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40F9FD1D2E35940069AE54 /* SecondViewController.swift */; };
 		CF438C3B1D00134B00FDC42C /* imgbtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF438C3A1D00134B00FDC42C /* imgbtn2.png */; };
 		CF8A772D1CFFEC7A0099229D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A772C1CFFEC7A0099229D /* AppDelegate.swift */; };
 		CF8A772F1CFFEC7A0099229D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A772E1CFFEC7A0099229D /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF1904D81D1BA82000D555BD /* harinezumi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harinezumi.jpeg; sourceTree = "<group>"; };
+		CF40F9F91D2E26AF0069AE54 /* email-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-ico.png"; sourceTree = "<group>"; };
+		CF40F9FA1D2E26AF0069AE54 /* xcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xcode.png; sourceTree = "<group>"; };
+		CF40F9FD1D2E35940069AE54 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CF438C3A1D00134B00FDC42C /* imgbtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgbtn2.png; sourceTree = "<group>"; };
 		CF8A77291CFFEC7A0099229D /* UILesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILesson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8A772C1CFFEC7A0099229D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +68,13 @@
 			children = (
 				CF8A772C1CFFEC7A0099229D /* AppDelegate.swift */,
 				CF8A772E1CFFEC7A0099229D /* ViewController.swift */,
+				CF40F9FD1D2E35940069AE54 /* SecondViewController.swift */,
 				CF8A77301CFFEC7A0099229D /* Main.storyboard */,
 				CFA42F4E1CFFF92300DF3ED4 /* imgbtn1.png */,
 				CF438C3A1D00134B00FDC42C /* imgbtn2.png */,
+				CF40F9F91D2E26AF0069AE54 /* email-ico.png */,
+				CF40F9FA1D2E26AF0069AE54 /* xcode.png */,
+				CF1904D81D1BA82000D555BD /* harinezumi.jpeg */,
 				CF8A77331CFFEC7A0099229D /* Assets.xcassets */,
 				CF8A77351CFFEC7A0099229D /* LaunchScreen.storyboard */,
 				CF8A77381CFFEC7A0099229D /* Info.plist */,
@@ -130,10 +142,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA42F4F1CFFF92300DF3ED4 /* imgbtn1.png in Resources */,
+				CF40F9FB1D2E26AF0069AE54 /* email-ico.png in Resources */,
+				CF1904D91D1BA82000D555BD /* harinezumi.jpeg in Resources */,
 				CF8A77371CFFEC7A0099229D /* LaunchScreen.storyboard in Resources */,
 				CF8A77341CFFEC7A0099229D /* Assets.xcassets in Resources */,
 				CF438C3B1D00134B00FDC42C /* imgbtn2.png in Resources */,
 				CF8A77321CFFEC7A0099229D /* Main.storyboard in Resources */,
+				CF40F9FC1D2E26AF0069AE54 /* xcode.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF40F9FE1D2E35940069AE54 /* SecondViewController.swift in Sources */,
 				CF8A772F1CFFEC7A0099229D /* ViewController.swift in Sources */,
 				CF8A772D1CFFEC7A0099229D /* AppDelegate.swift in Sources */,
 			);

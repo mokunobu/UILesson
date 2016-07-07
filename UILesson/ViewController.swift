@@ -16,13 +16,21 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var textBt: UIButton!;
     @IBOutlet weak var imgBt: UIButton!;
-    @IBOutlet weak var swt: UISwitch!
+    @IBOutlet weak var swt: UISwitch!;
     
-    @IBOutlet weak var lbX: UILabel!
-    @IBOutlet weak var lbY: UILabel!
+    @IBOutlet weak var lbX: UILabel!;
+    @IBOutlet weak var lbY: UILabel!;
     
-    @IBOutlet weak var slidX: UISlider!
-    @IBOutlet weak var slidY: UISlider!
+    @IBOutlet weak var slidX: UISlider!;
+    @IBOutlet weak var slidY: UISlider!;
+    
+    @IBOutlet weak var textField: UITextField!;
+    
+    @IBOutlet weak var textView: UITextView!;
+    
+    @IBOutlet weak var imgView: UIImageView!;
+    
+    @IBOutlet weak var segCon: UISegmentedControl!;
     
     //画面を読み込んだ時に実行されるメソッド
     override func viewDidLoad() {
@@ -39,7 +47,6 @@ class ViewController: UIViewController {
         textBt.setTitle("Push!", forState: UIControlState.Normal);
         //無効にする
         textBt.enabled=true;
-        
         //Switchの操作
         //Switchの切り替え
         swt.on = false;
@@ -57,6 +64,43 @@ class ViewController: UIViewController {
         slidY.value = 70;
         
         slidX.continuous=false;
+        
+        
+        //テキストフィールドの調整
+        textField.text = "abcdefあいう";
+        textField.placeholder = "何か入力";
+        textField.textColor = UIColor.blueColor();
+        textField.backgroundColor = UIColor.magentaColor();
+        textField.textAlignment = NSTextAlignment.Center;
+        textField.font = UIFont.systemFontOfSize(25);
+        textField.keyboardType = UIKeyboardType.EmailAddress;
+        textField.returnKeyType = UIReturnKeyType.Send;
+        textField.addTarget(self,
+                            action: #selector(ViewController.textFieldDidEndOnExit(_:)),
+                            forControlEvents: UIControlEvents.EditingDidEnd);
+        
+        //TextViewの調整
+        //基本的にはテキストフィールドと同じ
+        //中身を編集可能か設定できる
+        //textView.editable = false;  //編集不可能
+        textView.editable = true;  //編集可能
+        
+        //ImageViewの調整
+        //画像はUIImage型で管理される
+        let img:UIImage = UIImage(named:"harinezumi.jpeg")!;
+        imgView.image = img;
+        imgView.contentMode = UIViewContentMode.ScaleAspectFill;
+        
+        //SegmentedControlの設定
+        //有効無効の変更
+        segCon.enabled=false;
+        //項目中の文字の変更
+        segCon.setTitle("a", forSegmentAtIndex: 0);
+        segCon.setTitle("b", forSegmentAtIndex: 1);
+        //項目の追加
+        segCon.insertSegmentWithImage(UIImage(named:"email-ico.png"), atIndex: 1, animated: true);
+        segCon.insertSegmentWithTitle("C", atIndex: segCon.numberOfSegments, animated: true);
+        segCon.insertSegmentWithTitle("D", atIndex: segCon.numberOfSegments, animated: true);
         
         
     }
@@ -91,12 +135,56 @@ class ViewController: UIViewController {
         let tmp:Int = Int(sender.value);
         sender.value = Float(tmp);
         lbX.text="x=\(sender.value)";
+        
+        //スライダーの値が一定より大きくなったらSegmentedControlの選択を変更する
+        if(sender.value > 60){
+            segCon.selectedSegmentIndex=3;
+            segCon.insertSegmentWithTitle("add", atIndex: 3, animated: false);
+            segCon.enabled = true;
+        }
     }
     
     //X用スライダーの値が変わった時
     @IBAction func changeValueSlidY(sender: UISlider) {
         lbY.text="y=\(sender.value)";
+        //スライダーの値が一定より大きくなったらSegmentedControlの選択を解除する
+        if(sender.value > 60){
+            segCon.selectedSegmentIndex = UISegmentedControlNoSegment;
+            segCon.removeSegmentAtIndex(3, animated: true);
+        }
     }
     
+    @IBAction func textFieldDidEndOnExit(sender: UITextField) {
+    }
+    
+    
+    
+    @IBAction func btnTouch(sender: UIButton) {
+        textField.resignFirstResponder();
+    }
+    @IBAction func textFieldEnd(sender: AnyObject) {
+        textField.resignFirstResponder();
+    }
+    
+    @IBAction func changeValueSegment(sender: UISegmentedControl) {
+        // 選択中の項目番号を取得
+        var no:Int = sender.selectedSegmentIndex;
+        switch(no) {
+        case 0:
+            textField.text = "one";
+        case 1:
+            textField.text = "two";
+        default:
+            textField.text = "none";
+        }
+        
+    }
 }
+
+
+
+
+
+
+
 
