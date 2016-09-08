@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="iA4-Xl-aap">
             <objects>
-                <viewController id="Od3-Kj-mfa" sceneMemberID="viewController">
+                <viewController id="Od3-Kj-mfa" customClass="SecondViewController" customModule="UILesson" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qR8-mk-cUf"/>
                         <viewControllerLayoutGuide type="bottom" id="Y7x-lI-QTb"/>
@@ -148,13 +148,48 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="partialCurl" id="CXo-9d-gx6"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QsD-3h-2vL">
-                                <rect key="frame" x="0.0" y="207" width="320" height="216"/>
-                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SelectItem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnI-pT-Dz0">
+                                <rect key="frame" x="16" y="79" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-5P-LB4">
+                                <rect key="frame" x="20" y="117" width="38" height="30"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="touchShowButton:" destination="Od3-Kj-mfa" eventType="touchUpInside" id="m0G-yM-qPl"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-5N-iXh">
+                                <rect key="frame" x="0.0" y="314" width="320" height="254"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QsD-3h-2vL">
+                                        <rect key="frame" x="0.0" y="38" width="320" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Od3-Kj-mfa" id="ChI-FK-JZ0"/>
+                                            <outlet property="delegate" destination="Od3-Kj-mfa" id="ADy-dg-FO6"/>
+                                        </connections>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uj-Co-p1z">
+                                        <rect key="frame" x="274" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="完了"/>
+                                        <connections>
+                                            <action selector="touchShowButton:" destination="Od3-Kj-mfa" eventType="touchUpInside" id="wbs-IR-dxJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="baseView" destination="iWm-5N-iXh" id="sAd-AV-Utp"/>
+                        <outlet property="picker" destination="QsD-3h-2vL" id="4wu-t0-5lT"/>
+                        <outlet property="selectItem" destination="GnI-pT-Dz0" id="gAR-lv-Vi6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVf-Kz-tG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
