@@ -17,6 +17,11 @@
 		CF8A77321CFFEC7A0099229D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8A77301CFFEC7A0099229D /* Main.storyboard */; };
 		CF8A77341CFFEC7A0099229D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8A77331CFFEC7A0099229D /* Assets.xcassets */; };
 		CF8A77371CFFEC7A0099229D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8A77351CFFEC7A0099229D /* LaunchScreen.storyboard */; };
+		CF9CC60E1DA6243300D411D1 /* ScrollTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CC60D1DA6243300D411D1 /* ScrollTestViewController.swift */; };
+		CF9CC6131DA6256D00D411D1 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9CC60F1DA6256D00D411D1 /* 2.png */; };
+		CF9CC6141DA6256D00D411D1 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9CC6101DA6256D00D411D1 /* 3.png */; };
+		CF9CC6151DA6256D00D411D1 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9CC6111DA6256D00D411D1 /* 4.png */; };
+		CF9CC6161DA6256D00D411D1 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9CC6121DA6256D00D411D1 /* 1.png */; };
 		CFA42F4F1CFFF92300DF3ED4 /* imgbtn1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFA42F4E1CFFF92300DF3ED4 /* imgbtn1.png */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,11 @@
 		CF8A77331CFFEC7A0099229D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF8A77361CFFEC7A0099229D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF8A77381CFFEC7A0099229D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9CC60D1DA6243300D411D1 /* ScrollTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTestViewController.swift; sourceTree = "<group>"; };
+		CF9CC60F1DA6256D00D411D1 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		CF9CC6101DA6256D00D411D1 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		CF9CC6111DA6256D00D411D1 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		CF9CC6121DA6256D00D411D1 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		CFA42F4E1CFFF92300DF3ED4 /* imgbtn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgbtn1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CF8A772C1CFFEC7A0099229D /* AppDelegate.swift */,
+				CF9CC60D1DA6243300D411D1 /* ScrollTestViewController.swift */,
 				CF8A772E1CFFEC7A0099229D /* ViewController.swift */,
 				CF40F9FD1D2E35940069AE54 /* SecondViewController.swift */,
 				CF8A77301CFFEC7A0099229D /* Main.storyboard */,
@@ -74,6 +85,10 @@
 				CF438C3A1D00134B00FDC42C /* imgbtn2.png */,
 				CF40F9F91D2E26AF0069AE54 /* email-ico.png */,
 				CF40F9FA1D2E26AF0069AE54 /* xcode.png */,
+				CF9CC60F1DA6256D00D411D1 /* 2.png */,
+				CF9CC6101DA6256D00D411D1 /* 3.png */,
+				CF9CC6111DA6256D00D411D1 /* 4.png */,
+				CF9CC6121DA6256D00D411D1 /* 1.png */,
 				CF1904D81D1BA82000D555BD /* harinezumi.jpeg */,
 				CF8A77331CFFEC7A0099229D /* Assets.xcassets */,
 				CF8A77351CFFEC7A0099229D /* LaunchScreen.storyboard */,
@@ -141,12 +156,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9CC6151DA6256D00D411D1 /* 4.png in Resources */,
 				CFA42F4F1CFFF92300DF3ED4 /* imgbtn1.png in Resources */,
 				CF40F9FB1D2E26AF0069AE54 /* email-ico.png in Resources */,
 				CF1904D91D1BA82000D555BD /* harinezumi.jpeg in Resources */,
 				CF8A77371CFFEC7A0099229D /* LaunchScreen.storyboard in Resources */,
 				CF8A77341CFFEC7A0099229D /* Assets.xcassets in Resources */,
+				CF9CC6141DA6256D00D411D1 /* 3.png in Resources */,
 				CF438C3B1D00134B00FDC42C /* imgbtn2.png in Resources */,
+				CF9CC6131DA6256D00D411D1 /* 2.png in Resources */,
+				CF9CC6161DA6256D00D411D1 /* 1.png in Resources */,
 				CF8A77321CFFEC7A0099229D /* Main.storyboard in Resources */,
 				CF40F9FC1D2E26AF0069AE54 /* xcode.png in Resources */,
 			);
@@ -162,6 +181,7 @@
 				CF40F9FE1D2E35940069AE54 /* SecondViewController.swift in Sources */,
 				CF8A772F1CFFEC7A0099229D /* ViewController.swift in Sources */,
 				CF8A772D1CFFEC7A0099229D /* AppDelegate.swift in Sources */,
+				CF9CC60E1DA6243300D411D1 /* ScrollTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
