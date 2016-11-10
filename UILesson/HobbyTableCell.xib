@@ -36,6 +36,7 @@
                 <outlet property="imgIcon" destination="RPc-35-HR5" id="Frs-AA-hOG"/>
                 <outlet property="lblHobbyName" destination="ZqW-8a-if7" id="hga-dC-vb2"/>
                 <outlet property="swHobbyYes" destination="y14-Uw-8SX" id="wbz-cY-ANu"/>
+                <outlet property="view" destination="nPP-gj-JMT" id="JkA-6g-ybL"/>
             </connections>
             <point key="canvasLocation" x="468" y="284"/>
         </view>

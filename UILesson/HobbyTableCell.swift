@@ -14,6 +14,7 @@ class HobbyTableCell : UITableViewCell {
     @IBOutlet weak var imgIcon: UIImageView!
     @IBOutlet weak var lblHobbyName: UILabel!
     @IBOutlet weak var swHobbyYes: UISwitch!
+    @IBOutlet weak var view: UIView!
     
     
 }
