@@ -29,6 +29,10 @@
 		CF9CC6151DA6256D00D411D1 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9CC6111DA6256D00D411D1 /* 4.png */; };
 		CF9CC6161DA6256D00D411D1 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9CC6121DA6256D00D411D1 /* 1.png */; };
 		CFA42F4F1CFFF92300DF3ED4 /* imgbtn1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFA42F4E1CFFF92300DF3ED4 /* imgbtn1.png */; };
+		CFF27BD91DE6B7C900DAB5F6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF27BD81DE6B7C900DAB5F6 /* PageViewController.swift */; };
+		CFF27BDB1DE6B81E00DAB5F6 /* APageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF27BDA1DE6B81E00DAB5F6 /* APageViewController.swift */; };
+		CFF27BDD1DE6B85400DAB5F6 /* BPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF27BDC1DE6B85400DAB5F6 /* BPageViewController.swift */; };
+		CFF27BDF1DE6B88300DAB5F6 /* CPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF27BDE1DE6B88300DAB5F6 /* CPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		CF9CC6111DA6256D00D411D1 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		CF9CC6121DA6256D00D411D1 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		CFA42F4E1CFFF92300DF3ED4 /* imgbtn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgbtn1.png; sourceTree = "<group>"; };
+		CFF27BD81DE6B7C900DAB5F6 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		CFF27BDA1DE6B81E00DAB5F6 /* APageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APageViewController.swift; sourceTree = "<group>"; };
+		CFF27BDC1DE6B85400DAB5F6 /* BPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPageViewController.swift; sourceTree = "<group>"; };
+		CFF27BDE1DE6B88300DAB5F6 /* CPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,10 @@
 				C87D2E871DC1CAFB0054A68A /* HobbyTableViewController.swift */,
 				C8C469981DD440120008C8FD /* HobbyData.swift */,
 				C8C4699A1DD447520008C8FD /* HobbyCategory.swift */,
+				CFF27BD81DE6B7C900DAB5F6 /* PageViewController.swift */,
+				CFF27BDA1DE6B81E00DAB5F6 /* APageViewController.swift */,
+				CFF27BDC1DE6B85400DAB5F6 /* BPageViewController.swift */,
+				CFF27BDE1DE6B88300DAB5F6 /* CPageViewController.swift */,
 			);
 			path = UILesson;
 			sourceTree = "<group>";
@@ -198,9 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C4699B1DD447520008C8FD /* HobbyCategory.swift in Sources */,
+				CFF27BDB1DE6B81E00DAB5F6 /* APageViewController.swift in Sources */,
+				CFF27BD91DE6B7C900DAB5F6 /* PageViewController.swift in Sources */,
 				C8C469991DD440120008C8FD /* HobbyData.swift in Sources */,
 				C87D2E881DC1CAFB0054A68A /* HobbyTableViewController.swift in Sources */,
 				CF40F9FE1D2E35940069AE54 /* SecondViewController.swift in Sources */,
+				CFF27BDD1DE6B85400DAB5F6 /* BPageViewController.swift in Sources */,
+				CFF27BDF1DE6B88300DAB5F6 /* CPageViewController.swift in Sources */,
 				CF8A772F1CFFEC7A0099229D /* ViewController.swift in Sources */,
 				CF8A772D1CFFEC7A0099229D /* AppDelegate.swift in Sources */,
 				CF9CC60E1DA6243300D411D1 /* ScrollTestViewController.swift in Sources */,
