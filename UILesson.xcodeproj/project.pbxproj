@@ -33,6 +33,9 @@
 		CFF27BDB1DE6B81E00DAB5F6 /* APageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF27BDA1DE6B81E00DAB5F6 /* APageViewController.swift */; };
 		CFF27BDD1DE6B85400DAB5F6 /* BPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF27BDC1DE6B85400DAB5F6 /* BPageViewController.swift */; };
 		CFF27BDF1DE6B88300DAB5F6 /* CPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF27BDE1DE6B88300DAB5F6 /* CPageViewController.swift */; };
+		CFF68ABF1DEFE644000517C1 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF68ABE1DEFE644000517C1 /* OneViewController.swift */; };
+		CFF68AC11DEFE68A000517C1 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF68AC01DEFE68A000517C1 /* TwoViewController.swift */; };
+		CFF68AC31DEFE79C000517C1 /* InsidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF68AC21DEFE79C000517C1 /* InsidePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		CFF27BDA1DE6B81E00DAB5F6 /* APageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APageViewController.swift; sourceTree = "<group>"; };
 		CFF27BDC1DE6B85400DAB5F6 /* BPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPageViewController.swift; sourceTree = "<group>"; };
 		CFF27BDE1DE6B88300DAB5F6 /* CPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPageViewController.swift; sourceTree = "<group>"; };
+		CFF68ABE1DEFE644000517C1 /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		CFF68AC01DEFE68A000517C1 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		CFF68AC21DEFE79C000517C1 /* InsidePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsidePageViewController.swift; path = ../InsidePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,9 @@
 				CFF27BDA1DE6B81E00DAB5F6 /* APageViewController.swift */,
 				CFF27BDC1DE6B85400DAB5F6 /* BPageViewController.swift */,
 				CFF27BDE1DE6B88300DAB5F6 /* CPageViewController.swift */,
+				CFF68ABE1DEFE644000517C1 /* OneViewController.swift */,
+				CFF68AC01DEFE68A000517C1 /* TwoViewController.swift */,
+				CFF68AC21DEFE79C000517C1 /* InsidePageViewController.swift */,
 			);
 			path = UILesson;
 			sourceTree = "<group>";
@@ -210,10 +219,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C4699B1DD447520008C8FD /* HobbyCategory.swift in Sources */,
+				CFF68AC31DEFE79C000517C1 /* InsidePageViewController.swift in Sources */,
 				CFF27BDB1DE6B81E00DAB5F6 /* APageViewController.swift in Sources */,
 				CFF27BD91DE6B7C900DAB5F6 /* PageViewController.swift in Sources */,
 				C8C469991DD440120008C8FD /* HobbyData.swift in Sources */,
 				C87D2E881DC1CAFB0054A68A /* HobbyTableViewController.swift in Sources */,
+				CFF68AC11DEFE68A000517C1 /* TwoViewController.swift in Sources */,
+				CFF68ABF1DEFE644000517C1 /* OneViewController.swift in Sources */,
 				CF40F9FE1D2E35940069AE54 /* SecondViewController.swift in Sources */,
 				CFF27BDD1DE6B85400DAB5F6 /* BPageViewController.swift in Sources */,
 				CFF27BDF1DE6B88300DAB5F6 /* CPageViewController.swift in Sources */,

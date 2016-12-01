@@ -1,15 +1,15 @@
 //
-//  PageViewController.swift
+//  InsidePageViewController.swift
 //  UILesson
 //
-//  Created by iMac200901 on 2016/11/24.
+//  Created by iMac200901 on 2016/12/01.
 //  Copyright © 2016年 okunobu.ncp.jp. All rights reserved.
 //
 
 import UIKit
 
-class PageViewController : UIPageViewController, UIPageViewControllerDataSource {
-
+class InsidePageViewController : UIPageViewController , UIPageViewControllerDataSource {
+    
     var nowPage:Int = 0;
     
     //使用するViewControllerのリスト（廃止）
@@ -22,17 +22,15 @@ class PageViewController : UIPageViewController, UIPageViewControllerDataSource 
         super.viewDidLoad();
         //登録したいViewControllerを取得する（廃止）
         /*viewControllerList = [
-            storyboard!.instantiateViewControllerWithIdentifier("APageViewController"),
-            storyboard!.instantiateViewControllerWithIdentifier("BPageViewController"),
-            storyboard!.instantiateViewControllerWithIdentifier("CPageViewController")
-        ];*/
+         storyboard!.instantiateViewControllerWithIdentifier("APageViewController"),
+         storyboard!.instantiateViewControllerWithIdentifier("BPageViewController"),
+         storyboard!.instantiateViewControllerWithIdentifier("CPageViewController")
+         ];*/
         
         //各ページのViewContorollerの名前を配列で管理
         viewControllerNameList = [
-            "APageViewController",
-            "BPageViewController",
-            "CPageViewController",
-            "FirstTableViewController"
+            "OneViewController",
+            "TwoViewController"
         ];
         
         //始めに表示をするViewControllerを指定
@@ -50,11 +48,11 @@ class PageViewController : UIPageViewController, UIPageViewControllerDataSource 
         nowPage -= 1;
         //ループする場合
         /*
-        if(nowPage < 0){
-            //最後のページへループ
-            nowPage = viewControllerNameList - 1;
-        }
-        */
+         if(nowPage < 0){
+         //最後のページへループ
+         nowPage = viewControllerNameList - 1;
+         }
+         */
         //ループしない場合
         if(nowPage < 0){
             nowPage = 0;
@@ -63,7 +61,7 @@ class PageViewController : UIPageViewController, UIPageViewControllerDataSource 
         }
         
         return storyboard!.instantiateViewControllerWithIdentifier(viewControllerNameList[nowPage]);
-    
+        
     }
     //次のページへ移動した時、表示するViewControllerを指定する(左スワイプ時)
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
@@ -71,11 +69,11 @@ class PageViewController : UIPageViewController, UIPageViewControllerDataSource 
         nowPage += 1;
         //ループする場合
         /*
-        if(nowPage > viewControllerList.count - 1) {
-            //最初のページへループ
-            nowPage = 0;
-        }
-        */
+         if(nowPage > viewControllerList.count - 1) {
+         //最初のページへループ
+         nowPage = 0;
+         }
+         */
         //ループしない場合
         if(nowPage > viewControllerNameList.count - 1) {
             nowPage = viewControllerNameList.count - 1;
@@ -84,5 +82,4 @@ class PageViewController : UIPageViewController, UIPageViewControllerDataSource 
         }
         return storyboard!.instantiateViewControllerWithIdentifier(viewControllerNameList[nowPage]);
     }
-    
 }
