@@ -794,6 +794,13 @@
                                     <segue destination="jFT-DL-qnl" kind="presentation" id="gAu-Dn-apt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icg-gF-2Zy">
+                                <rect key="frame" x="239" y="34" width="31" height="30"/>
+                                <state key="normal" title="Web"/>
+                                <connections>
+                                    <segue destination="BlD-RM-tAG" kind="presentation" id="TGi-Q6-8Sj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -808,6 +815,39 @@
             </objects>
             <point key="canvasLocation" x="730" y="429"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="NQT-m6-yyZ">
+            <objects>
+                <viewController id="BlD-RM-tAG" customClass="WebViewController" customModule="UILesson" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QeR-z8-TnE"/>
+                        <viewControllerLayoutGuide type="bottom" id="2hv-Hs-xjf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LWX-WB-qbz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h5A-Qe-1g6">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LdT-Ly-CTS">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="searchBar" destination="h5A-Qe-1g6" id="NU6-GU-hwu"/>
+                        <outlet property="webView" destination="LdT-Ly-CTS" id="n8r-Z0-NW0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8rF-YB-CD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="-184"/>
+        </scene>
         <!--Scroll Test View Controller-->
         <scene sceneID="fsl-Zf-Ylh">
             <objects>
@@ -820,9 +860,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3Y-wG-VSe">
-                                <rect key="frame" x="0.0" y="106" width="320" height="462"/>
-                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDJ-eV-sAZ">
                                 <rect key="frame" x="42" y="28" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -837,6 +874,9 @@
                                     <segue destination="WC8-XB-p5q" kind="presentation" id="aSM-zt-x22"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3Y-wG-VSe">
+                                <rect key="frame" x="0.0" y="106" width="320" height="462"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1012,7 +1052,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INf-7D-v4A">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
@@ -1162,7 +1202,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                             </scrollView>
@@ -1173,24 +1213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9d-oy-uBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1806" y="446"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Kda-KU-tlg">
-            <objects>
-                <viewController id="chA-B8-zTY" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vrk-wE-Qz7"/>
-                        <viewControllerLayoutGuide type="bottom" id="i1C-5Z-37w"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2fy-m5-ADl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ff-bA-kOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="1694" y="438"/>
         </scene>
     </scenes>
     <resources>

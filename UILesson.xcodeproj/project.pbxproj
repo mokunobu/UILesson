@@ -13,6 +13,7 @@
 		C87D2E881DC1CAFB0054A68A /* HobbyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87D2E871DC1CAFB0054A68A /* HobbyTableViewController.swift */; };
 		C8C469991DD440120008C8FD /* HobbyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C469981DD440120008C8FD /* HobbyData.swift */; };
 		C8C4699B1DD447520008C8FD /* HobbyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C4699A1DD447520008C8FD /* HobbyCategory.swift */; };
+		CF116E7B1E273AC400DBA415 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF116E7A1E273AC400DBA415 /* WebViewController.swift */; };
 		CF1904D91D1BA82000D555BD /* harinezumi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF1904D81D1BA82000D555BD /* harinezumi.jpeg */; };
 		CF40F9FB1D2E26AF0069AE54 /* email-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = CF40F9F91D2E26AF0069AE54 /* email-ico.png */; };
 		CF40F9FC1D2E26AF0069AE54 /* xcode.png in Resources */ = {isa = PBXBuildFile; fileRef = CF40F9FA1D2E26AF0069AE54 /* xcode.png */; };
@@ -45,6 +46,7 @@
 		C87D2E871DC1CAFB0054A68A /* HobbyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbyTableViewController.swift; sourceTree = "<group>"; };
 		C8C469981DD440120008C8FD /* HobbyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbyData.swift; sourceTree = "<group>"; };
 		C8C4699A1DD447520008C8FD /* HobbyCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbyCategory.swift; sourceTree = "<group>"; };
+		CF116E7A1E273AC400DBA415 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CF1904D81D1BA82000D555BD /* harinezumi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harinezumi.jpeg; sourceTree = "<group>"; };
 		CF40F9F91D2E26AF0069AE54 /* email-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-ico.png"; sourceTree = "<group>"; };
 		CF40F9FA1D2E26AF0069AE54 /* xcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xcode.png; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				CFF68ABE1DEFE644000517C1 /* OneViewController.swift */,
 				CFF68AC01DEFE68A000517C1 /* TwoViewController.swift */,
 				CFF68AC21DEFE79C000517C1 /* InsidePageViewController.swift */,
+				CF116E7A1E273AC400DBA415 /* WebViewController.swift */,
 			);
 			path = UILesson;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				CFF27BDD1DE6B85400DAB5F6 /* BPageViewController.swift in Sources */,
 				CFF27BDF1DE6B88300DAB5F6 /* CPageViewController.swift in Sources */,
 				CF8A772F1CFFEC7A0099229D /* ViewController.swift in Sources */,
+				CF116E7B1E273AC400DBA415 /* WebViewController.swift in Sources */,
 				CF8A772D1CFFEC7A0099229D /* AppDelegate.swift in Sources */,
 				CF9CC60E1DA6243300D411D1 /* ScrollTestViewController.swift in Sources */,
 				C87D2E821DC1BB1A0054A68A /* FirstTableViewController.swift in Sources */,
